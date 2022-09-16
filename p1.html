@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>OL</title>
+	<meta charset="utf-8">
+   
+    <meta name="author" content="Rodolfo Gutiérrez Hernández ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+    	.parallax{
+    		background-image: url(https://th.bing.com/th/id/R.af82081dff530979d5f54d87c37da2fb?rik=l8qN1zNgfeTrIA&riu=http%3a%2f%2fwww.lasty.com.pl%2fregion%2flarge%2f6%2fJUKMEX%2fpolwysep-jukatan.JPG&ehk=i0Q17%2bL5%2fTUu815j007NGYsOCG6U9RfWlixhckYX6d0%3d&risl=&pid=ImgRaw&r=0);
+    		min-height: 500px; 
+  			background-attachment: fixed;
+  			background-position: center;
+  			background-repeat: no-repeat;
+  			background-size: cover;
+  			opacity: 80%;
+		}
+    .us{
+      background-color: lightgray;
+    }
+    </style>
+    <article>
+    <section>
+      <div class="parallax">
+        <h1>Practica FORMULARIOS</h1>
+      </div>
+    </section>
+    <section>
+    <form  method="post" enctype="text/plain">
+      <fieldset>
+        <legend>Registro de usuarios</legend>
+        <label for="usuario"> Ingresa tu nombre </label>
+        <input type="text" name="usuario" class="us" placeholder="Escribe tu nombre" minlength="6" maxlength="15"><br>
+        <label for="usuario"> Ingresa tu Apellido  paterno </label>
+        <input type="text" name="usuario" class="us" placeholder="Escribe tu  Apellido paterno" minlength="6" maxlength="15"><br>
+        <label for="usuario"> Ingresa tu Apellido materno </label>
+        <input type="text" name="usuario" class="us" placeholder="Escribe tu  Apellido materno" minlength="6" maxlength="15"><br>
+
+        <label for="pass"> Ingresa tu contraseña</label>
+        <input type="password" name="pass"class="us" placeholder="Contraseña" minlength="5" maxlength="10"><br>
+        <textarea rows="10" cols="25" placeholder="Escribe tus comentarios"></textarea><br>
+        <input type="checkbox" name="dep" checked value="Atle"><label for="dep" >Atletismo</label><br>
+        <input type="checkbox" name="dep1"  value="foot"><label for="dep1" >Futbol</label><br>
+        <input type="checkbox" name="dep2"  value="Nata"><label for="dep2" >Natación</label><br>
+        <input type="checkbox" name="dep3"  value="ten"><label for="dep3" >Tennis</label><br>
+        
+        
+        <input type="radio" name="s1"  value="Masculino"><label for="s1" >Masculino</label><br>
+        <input type="radio" name="s1"  value="Femenino"><label for="s1" >Femenino</label><br>
+
+        <select name="con" size="3" multiple="2">
+          <optgroup label="SLP">
+            <option>SLP</option> 
+            <option>CDV</option> 
+            <option>SGS</option> 
+            </optgroup>
+            <optgroup label="QRO">
+            <option>QRO</option> 
+             <option>CDV</option> 
+            <option>SGS</option>  
+            </optgroup>
+        </select>
+      </fieldset>
+    </form>
+<div class="parallax">
+      </div>
+</head>
+<body>
