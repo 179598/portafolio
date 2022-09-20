@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>OL</title>
+	<meta charset="utf-8">
+   
+    <meta name="author" content="Rodolfo Gutiérrez Hernández ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        .us{
+            background-color: lightgray;
+        }
+        h1{
+    	   text-align: center;
+        }
+        fieldset{
+    	   
+    	   text-align: justify;
+        }
+        table{
+            margin-left: 2px;
+            margin-left: 2px;
+            
+        }
+        td{
+            margin-left: 2px;
+            margin-left: 2px;
+            padding-left: 200px;
+        }
+        section{
+            margin-left: 40px;
+            margin-left: 40px;
+            width: 90%;
+            height: 90%;
+        }
+        h2{
+            text-align: right;
+        }
+    </style>
+    <article>
+    <section>
+     
+    <h1>Factura de venta en linea</h1>
+   
+    </section>
+    <section>
+    <form  method="post" enctype="text/plain" name="form">
+        <fieldset>
+            <legend>Información general </legend>
+            <table>
+                <tr>
+                    <td><label for="usuario"> Ingresa tu nombre </label> </td> 
+                    <td><label for="app"> Ingresa tu Apellido  paterno </label></td>
+                    <td><label for="apm">Ingresa tu Apellido materno </label></td>
+                
+                </tr>
+                <tr>
+                    <td><input type="text" name="usuario" class="us" placeholder="Escribe tu nombre" minlength="6" maxlength="15"></td>
+                    <td><input type="text" name="app" class="us" placeholder="Escribe tu  Apellido paterno" minlength="6" maxlength="15"></td>
+                    <td><input type="text" name="apm" class="us" placeholder="Escribe tu  Apellido materno" minlength="6" maxlength="15"></td>
+                </tr>
+                <tr>
+                    <td><label for="cal"> calle </label> </td> 
+                    <td><label for="num"> Num </label></td>
+                    <td><label for="col">Colonia </label></td>
+                
+                </tr>
+                <tr>
+                    <td><input type="text" name="cal" placeholder="Calle" class="us" ></td>
+                    <td><input type="number" name="num" placeholder="Numero exterior" class="us" ></td>
+                    <td><input type="text" name="col" placeholder="" class="us" ></td>
+                </tr>
+                <tr><td><label for="date"> Fecha de la venta </label> </td> </tr>
+                <tr><td><input type="date" name="date"></td></tr>
+            </table>
+        
+        </fieldset>
+        <fieldset>
+            <legend>Información del auto </legend>
+            <table>
+                <tr>
+                    <td><label for="marc">Marca </label> </td> 
+                    <td><label for="trans"> Transmision </label></td>
+                    <td><label for="mode"> Modelo </label></td>
+                
+                </tr>
+                <tr>
+                    <td><select name="marc">
+                        <option value="Nissan" >NIssan</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Ford">FORD</option>
+                        <option value="kia">KIA</option>
+                        <option value="DOGDE">Dodge</option>
+                        </select></td>
+                    <td><select name="trans">
+                        <option value="mnl">Manual</option>
+                        <option value="aut">Automatico</option>
+                        </select></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label >Numero de serie </label> </td> 
+                    <td><label> Año </label></td>
+                    <td><label > Color </label></td>
+                
+                </tr>
+                <tr>
+                    <td><input type="number" name="ser" placeholder="Numero serie" class="us" ></td>
+                    <td><input type="number" name="year" placeholder="Año" class="us"> </td>
+                <td><input type="color"></td>
+                </tr> 
+                <tr>
+                    <td><label >Precio </label> </td>
+                </tr>
+                <tr>
+                    <td><input type="number" name="pre" placeholder="Precio" class="us"> </td>
+                
+                </tr> 
+            </table>
+            <p>El vendedor afirma que la informcion anterior sobre el articulo que se vende es verdadera y precisa para su conocimiento</p><br>
+            <p>El comprador acepta la recepción de esta factura de venta</p>
+            <p><input type="checkbox"> Acepto los términos y condicione que se establecen en el contrato de la venta</p>
+            <p><a href="">Contrato de venta, terminos y condiciones</a></p>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Datos del comprador </legend>
+            <table>
+                 <tr>
+                    <td><label for="usuario"> Ingresa tu nombre </label> </td> 
+                    <td><label for="app"> Ingresa tu Apellido  paterno </label></td>
+                    <td><label for="apm">Ingresa tu Apellido materno </label></td>
+                
+                </tr>
+                <tr>
+                    <td><input type="text" name="usuario" class="us" placeholder="Escribe tu nombre" minlength="6" maxlength="15"></td>
+                    <td><input type="text" name="app" class="us" placeholder="Escribe tu  Apellido paterno" minlength="6" maxlength="15"></td>
+                    <td><input type="text" name="apm" class="us" placeholder="Escribe tu  Apellido materno" minlength="6" maxlength="15"></td>
+                </tr>
+                <tr>
+                    <td><label for="cal"> calle </label> </td> 
+                    <td><label for="num"> Num </label></td>
+                    <td><label for="col">Colonia </label></td>
+                
+                </tr>
+                <tr>
+                    <td><input type="text" name="cal" placeholder="Calle" class="us" ></td>
+                    <td><input type="number" name="num" placeholder="Numero exterior" class="us" ></td>
+                    <td><input type="text" name="col" placeholder="" class="us" ></td>
+                </tr>
+            </table>
+            <br><br>
+            <table>
+                <tr>
+                    <td><input type="submit"><input type="reset"> </td>
+                </tr>
+            </table>    
+        </fieldset>
+        </form>
+        </section>
+    </article>
+    <h2>&copy;FAMOSA AGENCIA VENEDORA DE AUTOS</h2>
