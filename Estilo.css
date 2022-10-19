@@ -1,0 +1,23 @@
+.Cnt{
+	margin: 2em auto;
+	width: 35%;
+	padding: 1.5em;
+	border:5px ;
+	border-collapse: collapse;
+	border-radius: 20px 20px 20px 20px;
+	background-color: #3B875B;
+	text-align: center;
+	color: white;
+}
+.Cnt:hover{
+	background-color: #AFFFF6;
+	transform: skew(-35deg);
+	color:gray;
+}
+.Cnt:active{
+		background-color: #18CCD3;
+		color:gray;
+		box-shadow: rgb(115, 115, 115 )-25px -15px 1px ;
+	}
+	
+}
