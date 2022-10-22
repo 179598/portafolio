@@ -1,0 +1,73 @@
+body{
+    font-family:arial;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.td{
+    font-weight: 600;
+    padding-right: 30px;
+    
+}
+.td:hover{
+    font-size: 20px;
+    color:white;
+    background-color: darkorange;
+    
+}
+header{
+    display: flex;
+    height: 70px;
+    background-color: white;
+    color:black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid black;
+    
+    
+}
+logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+    margin-left: 10px;
+}
+.parallax{
+    		background-image: url();/* https://pbs.twimg.com/profile_images/2159485920/solologo.png */
+    		min-height: 300px; 
+  			background-attachment: fixed;
+  			background-position: center;
+  			background-repeat: no-repeat;
+  			background-size: cover;
+  			opacity: 90%;
+}
+footer{
+    background-color: dimgray;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+.parrafo1{
+    background-color: darkorange;
+    height: 90px;
+}
+.foot{
+    color: white;
+    font-size: 10px;
+    margin: 500px;
+    padding: 50px;
+}
+.s1{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.personal{
+    border: 1px solid black;
+    margin: 10%;
+    padding: 20px;
+    box-shadow: 5px 10px #888888;
+}
