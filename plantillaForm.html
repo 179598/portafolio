@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="estiloForm.css" media="">
+<style type="text/css">
+	@import url('fonts/Raleway/css?family=Raleway');
+	*{
+		margin:0;
+		padding: 0;
+	}
+	#chat{
+		position: fixed;
+		width: 250px;
+		height: 40px;
+		background-color: lightblue;
+		bottom: 0px;
+		right: 35%;
+		z-index: 1;
+		color: white;
+		padding: 10px;
+		text-align: center;
+		line-height: 40px;
+		border-radius: 20px 20px 0px 0px;
+		cursor: pointer;
+		transition: width 2s ,height 4s;
+		transition: font-size:2s;
+	}
+	#chat:hover{
+		width: 550px;
+		height: 90px;
+		transition: width 2s ,height 2s;
+		border-radius: 20px 20px 0px 0px;
+	}
+	header{
+		position: relative;
+		margin: 20px auto;
+		width: 1000px;
+		height: 120px;
+	}
+	#logo{
+		position: absolute;
+		top:50px;
+		left: 30px;
+		width: 400px;
+		height: 66px;
+		font-family: 'Indie Flower',cursive;
+		font-size: 48px;
+		text-align: center;
+		line-height: 60px;
+	}
+	section{
+		position: relative;
+		margin: 20px auto;
+		width: 1000px;
+		height: 453px;
+	}
+	aside#formulario{
+		position: absolute;
+		left: 0;
+		top:0;
+		width: 500px;
+		height: 453px;
+	}
+	aside#formulario input[type="text"]
+	{
+		background: url(https://th.bing.com/th/id/OIP.QB5xyhi87qJ0XW48kYlK7gHaIE?pid=ImgDet&rs=1);
+		background-repeat: no-repeat;
+		background-position: right;
+		background-size: contain;
+	}
+	aside#formulario h1{
+		width: 500px;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		background: rgba(50,0,255,1);
+		color: white;
+		margin-bottom: 5px;
+	}
+	aside#formulario input[type="password"]
+	{
+		background: url(https://th.bing.com/th/id/OIP.CYXJH1yvXniGMLAI55z2XAHaHa?pid=ImgDet&rs=1);
+		background-repeat: no-repeat;
+		background-position: right;
+		background-size: contain;
+	}
+	aside#formulario input[type="email"]
+	{
+		background: url(https://th.bing.com/th/id/R.ba4cde42c1391a91cccc7969a1dd204b?rik=5awQyQIVTZDogQ&riu=http%3a%2f%2fespaimaternalactiu.com%2fwp-content%2fuploads%2f2017%2f04%2ficono-mail.png&ehk=oscIeTxFN3qJkUG6rET%2fa0w%2bt4mX6GOEz4Vxs6qEj7o%3d&risl=&pid=ImgRaw&r=0);
+		background-repeat: no-repeat;
+		background-position: right;
+		background-size: contain;
+	}
+	aside#formulario input[type="submit"]
+	{
+		width: 500px;
+		background-color: lightblue;
+		border:0;
+		padding: 20px;
+	}
+	aside#formulario input{
+		padding: 10px;
+		margin: 5px 0px;
+		width: 477px;
+	}
+
+
+
+</style>
+</head>
+<body>
+<div id="chat">
+Chat
+</div>
+<header>
+	<div id="logo">
+		Registro
+	</div>
+</header>
+
+<section>
+	<aside id="formulario"> 
+	<h1>
+		Registro
+	</h1>
+	<form>
+	<input type="text" id="usuario" name="usuario" placeholder="Usuario"/>
+	<input type="password" name="pass" placeholder="Password"/>
+	<input type="email" name="email" placeholder="E-mail"/>
+	<input type="submit" id="envio"value="Enviar datos" name="envio"/>
+	</form>
+	</aside>
+</section>
+
+
+</body>
+</html>
