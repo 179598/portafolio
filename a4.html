@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="Practica5.css">
+ <meta charset="utf-8">
+<style>
+    tr:hover{
+        background-color: gray;
+    }
+</style>
+</head>
+<body>
+<h2>Formato de tabla</h2>
+<br><br>
+<div align="center">
+<table>
+ <caption>Formatos de colores</caption>
+ <tr>
+ <th>Formato de color</th>
+ <th>Características</th>
+ <th>Elementos</th>
+ </tr>
+ <tr>
+ <td>RGB</td>
+ <td class="contenido">Las iniciales RGB significan Red, Green y Blue (Rojo, Verde y Azul), podemos usar colores en HTML 
+5 haciendo uso de código de colores de 3 campos RGB, por ejemplo si queremos usar el color naranja debemos escribir 255 
+165 0, en CSS se colocan estos número dentro del método rgb()</td>
+ <td>Desde 0 hasta 255</td>
+ </tr>
+ <tr>
+ <td>Hexadecimal</td>
+ <td class="contenido">El formato de color hexadecimal esta compuesto por 6 valores alfanuméricos, en algunos casos un 
+color puede estar compuesto únicamente por letras o únicamente por números, antes de los 6 valores alfanuméricos se 
+debe colocar un simbolo char o numeral “#”, bueno hasta HTML 5 y CSS 3 al menos aún se debe usar este simbolo char, por 
+ejemplo si queremos usar el color naranja debemos escribir #ffa500</td>
+ <td>Desde #000000 hasta #FFFFFF</td>
+ </tr>
+ <tr>
+ <td>HSL</td>
+ <td class="contenido">Las iniciales HSL significan Hue, Saturation y Lightness, traducido al español Tono, Saturación y 
+Luminosidad, este formato de color esta compuesto por 3 valores numéricos similar al color RGB, solo que en HSL el segundo 
+y tercer valor debe llevar un simbolo de porcentaje al final “%”, por ejemplo si queremos usar el color naranja, debemos de 
+escribir 39 100% 50%</td>
+ <td>Tono, Saturación, Luminosidad</td>
+ </tr>
+ <tr>
+ <td>Extensión Alpha</td>
+ <td class="contenido">A los colores RGB y HSL les podemos agregar una extensión de tipo Alpha que hace que el color 
+tenga cierto nivel de intensidad, por ejemplo basándonos en el color naranja, les agregamos un cuarto valor como 0.5 a 
+nuestro color RGB y pasaria a ser RGBA por el cuarto valor Alpha.</td>
+ <td>Valor Alpha de 0 a 1</td>
+ </tr>
+</table>
+</div>
+<h3>Referencias:</h3>
+<cite>https://blog.nubecolectiva.com/formatos-de-colores-que-soporta-html-5/</cite>
+</body>
+</html>
