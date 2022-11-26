@@ -87,16 +87,16 @@
     
     <script>
         function  polin ()
-		{
-			var phase=document.getElementById ('word').value;
-            var cd=phase.split("");
-            var rv=cd.reverse();
-            var nc=rv.join("");
+	{
+	    let phase=document.getElementById ('word').value;
+            let cd=phase.split("");
+            let rv=cd.reverse();
+            let nc=rv.join("");
 			
 
 			if (phase==nc)
 			{				
-				alert ("Es un palindromo");
+				
 				var doc = new jsPDF();
 
 				doc.setFontSize(40);
@@ -107,9 +107,9 @@
 				$('iframe').attr('src', string);
 
 
-            }
+            		}
 			else{
-				alert ("No es palindromo")
+				
 				var doc = new jsPDF();
 
 				doc.setFontSize(40);
@@ -121,7 +121,7 @@
 
 			}
 		}
-    //Este codigo ha sido creado por Rodolfo Gutiérrez Hernández, las funciones split,reverse y join fueron autorizadas por la maestra
+    //Este codigo ha sido creado por Rodolfo Gutiérrez Hernández
     //
     </script>
 </body>
