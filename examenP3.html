@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Examen</title>
+    <meta name="description" content="Evaluacion practica parcial 3 programacion web"/>
+    <meta name="language" content="es"/>
+    <meta name="author" content="Rodolfo Gutierrez Hernandez"/>
+	<script type="text/javascript" src="js/jquery/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+	<script type="text/javascript" src="jspdf.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.addimage.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.standard_fonts_metrics.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.split_text_to_size.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.from_html.js"></script>
+	<style>
+        <style type="text/css">
+		@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+		*{
+			font-family: 'Lato', sans-serif;
+
+		}
+		#word{
+			margin-left: 30%;
+			width: 500px;
+			height: 25px;
+		}
+		#p1{
+			margin-left: 42%;
+			display: block;
+            font-family: 'Lato', sans-serif;
+		}
+		#sub{
+			margin-top: 10px;
+			margin-left: 30%;
+			display: block;
+			width: 510px;
+			height: 30px;
+			background-color: #84BDFF;
+			color:white;
+		}
+		#sub:hover{
+			background: #b3aca7;
+  			color: #e2dedb;
+            cursor:pointer;
+            -webkit-box-shadow: 0px 0px 9px 3px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 9px 3px rgba(0,0,0,0.75);
+            box-shadow: 0px 0px 9px 3px rgba(0,0,0,0.75);
+		}
+        input{
+            background-color: #ECF2FF;
+        }
+        #al{
+            margin-top: 10px;
+            margin-left: 30%;
+            width: 506px;
+			height: 205px;
+        }
+        #marca {
+          color: #d0d0d0;
+          font-size: 120pt;
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          z-index: -1;
+          left:-100px;
+          top:-200px;
+            opacity: 20%;
+}
+	</style>
+</head>
+<body>
+    <div id="marca">
+        <p>179598</p>
+    </div>
+	<section>
+		<form id="form" name="fm">
+			<p id="p1">Escribe una frase</p>	
+			<input id="word" type="text" placeholder="">
+			
+		</form>
+		<input type="submit" value="Evaluar la frase" id="sub" onclick="polin();" >
+	</section>
+	<iframe id="al"></iframe>
+    
+    <script>
+        function  polin ()
+		{
+			var phase=document.getElementById ('word').value;
+            var cd=phase.split("");
+            var rv=cd.reverse();
+            var nc=rv.join("");
+			
+
+			if (phase==nc)
+			{				
+				alert ("Es un palindromo");
+				var doc = new jsPDF();
+
+				doc.setFontSize(40);
+				doc.setTextColor(10,71,121);
+				doc.text(40, 20, "Es un palindromo");
+				var string = doc.output('datauristring');
+
+				$('iframe').attr('src', string);
+
+
+            }
+			else{
+				alert ("No es palindromo")
+				var doc = new jsPDF();
+
+				doc.setFontSize(40);
+				doc.setTextColor(9,7,121);
+				doc.text(40, 20, "No es un palindromo");
+				var string = doc.output('datauristring');
+
+				$('iframe').attr('src', string);
+
+			}
+		}
+    //Este codigo ha sido creado por Rodolfo Gutiérrez Hernández, las funciones split,reverse y join fueron autorizadas por la maestra
+    //
+    </script>
+</body>
+</html>
