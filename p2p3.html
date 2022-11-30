@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang=”es”>
+<head>
+<title> Práctica 2 Javascript</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        h2,h3{
+            text-align: center;
+        }
+        #formulario{
+            padding-left: 450px;
+            
+        }
+        input{
+            width: 1000px;
+        }
+        input:last-of-type{
+            background-color: brown;
+            color: white;
+        }
+        
+    </style>
+    
+</head>
+<body>
+ <h2>Funciones reservadas</h2>
+ <h3>Práctica 2</h3>
+ <h3>Parcial 3</h3>
+<form name="formulario" id="formulario">
+ <label for="cadena">Nombre</label><br/>
+ <input type="text" id="nombre" name="nombre" ><br/>
+ <label for="cadena2">Apellido paterno</label><br/>
+ <input type="text" id="ap" name="ap" ><br/>
+ <label for="cadena2">Apellido materno</label><br/>
+ <input type="text" id="am" name="am" ><br/>
+ 
+ <label for="cadena2">Año de nacimiento</label><br/>
+ <input type="text" id="anio" name="anio" ><br/>
+ 
+ <label for="cadena2">Mes de nacimiento</label><br/>
+ <input type="text" id="mes" name="mes" ><br/>
+ <label for="cadena2">Día de nacimiento</label><br/>
+ <input type="text" id="dia" name="dia" ><br/>
+ 
+ 
+ <label for="resultado">Resultado:</label><br/>
+ <input type="text" id="resultado" name="resultado" ><br/>
+ 
+<input type="submit" value="Generar el RFC" onclick="genera_rfc()" >
+</form><br/>
+    <script>
+        function genera_rfc()
+        {
+            
+        var nm=document.getElementById("nombre").value;
+            let aux1=nm.substr(0,1);
+    
+        var app=document.getElementById('ap').value;
+    let aux2=app.substr(0,1);
+    
+    var apm=document.getElementById('am').value;
+    let aux3=apm.substr(0,1);
+    
+    var year=document.getElementById('anio').value;
+    let aux4=year.substr(2,3);
+    
+    var mes=document.getElementById('mes').value;
+
+    var day=document.getElementById('dia').value;
+    
+    let rfc=(aux2+aux3+aux1+aux4+mes+day);
+    }
+    
+   
+    
+    alert(rfc.toUpperCase());
+    
+       
+}
+
+    </script>
+    
+</body> 
+
+</html>
